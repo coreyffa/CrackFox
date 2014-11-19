@@ -6,22 +6,28 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemFood;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
+import net.minecraftforge.common.util.EnumHelper;
+
 
 public class ModItems {
-    //non-functional items.
 
+    //Food Items
     public static Item testFood;
     public static Item posionFood;
-    //public static Item chromiumNugget;
+
+    //non-functional items.
+    public static Item chromiumNugget;
 
     //Tools
-    //public static Item itemName;
+    public static Item chromiumPickaxe;
+    public static Item chromiumAxe;
+    public static Item chromiumSpade;
 
 
     // Armor
 
     //materials
-    //static ToolMaterial chromiumToolMaterial = EnumHelper.addToolMaterial("liveToolMaterial", 2, 750, 7, 2.0F, 20);
+    static Item.ToolMaterial chromiumToolMaterial = EnumHelper.addToolMaterial("chromiumToolMaterial", 2, 750, 7, 2.0F, 20);
 
     /**
      * We call this in our main mod file.
@@ -36,7 +42,7 @@ public class ModItems {
 
         ItemFood posionFood;
         posionFood = new ItemPoisonFood("posionFood", 2, 0.2f, false, new PotionEffect(Potion.poison.id, 100, 1)).setAlwaysEdible();
-        /**
+
         chromiumNugget = new ItemChromiumNugget();
 
         RegisterHelper.registerItem(chromiumNugget);
@@ -49,7 +55,7 @@ public class ModItems {
         RegisterHelper.registerItem(chromiumPickaxe);
         RegisterHelper.registerItem(chromiumAxe);
         RegisterHelper.registerItem(chromiumSpade);
-         */
+
         RegisterHelper.registerItem(posionFood);
     }
 }

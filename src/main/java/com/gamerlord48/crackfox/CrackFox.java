@@ -1,6 +1,7 @@
 package com.gamerlord48.crackfox;
 
 import com.gamerlord48.crackfox.blocks.ModBlocks;
+import com.gamerlord48.crackfox.event.CrackFoxEventManager;
 import com.gamerlord48.crackfox.handler.ModRecipes;
 import com.gamerlord48.crackfox.help.Reference;
 import com.gamerlord48.crackfox.items.ModItems;
@@ -8,6 +9,7 @@ import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.creativetab.CreativeTabs;
@@ -29,7 +31,7 @@ public class CrackFox {
         }
     };
 
-    //MegaModEventManager megamodeventManager = new MegaModEventManager();
+    CrackFoxEventManager crackFoxEventManager = new CrackFoxEventManager();
 
     /**
      * This is where you can add your own stuff.
@@ -49,7 +51,7 @@ public class CrackFox {
         //Register handler, adds all the recipes
         ModRecipes.addRecipes();
 
-        //GameRegistry.registerWorldGenerator(megamodeventManager, 1);
+        GameRegistry.registerWorldGenerator(crackFoxEventManager, 1);
     }
 
     @EventHandler

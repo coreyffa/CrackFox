@@ -30,6 +30,38 @@ public class ModRecipes {
                         'X', Blocks.planks, 'Y', Items.arrow
                 });
 
+        GameRegistry.addRecipe(new ItemStack(ModItems.chromiumAxe), new Object[]
+                {
+                        " XX",
+                        " YX",
+                        " Y ",
+                        'X', ModItems.chromiumNugget, 'Y', Items.stick
+                });
+
+        GameRegistry.addRecipe(new ItemStack(ModItems.chromiumAxe), new Object[]
+                {
+                        "XX ",
+                        "XY ",
+                        " Y ",
+                        'X', ModItems.chromiumNugget, 'Y', Items.stick
+                });
+
+        GameRegistry.addRecipe(new ItemStack(ModItems.chromiumPickaxe), new Object[]
+                {
+                        "xxx",
+                        " o ",
+                        " o ",
+                        'x', ModItems.chromiumNugget, 'o', Items.stick
+                });
+
+        GameRegistry.addRecipe(new ItemStack(ModItems.chromiumSpade), new Object[]
+                {
+                        " x ",
+                        " o ",
+                        " o ",
+                        'x', ModItems.chromiumNugget, 'o', Items.stick
+                });
+
         /**
          * Shapeless recipes are the same as normal recipes, except that they dont have a layout.
          */
