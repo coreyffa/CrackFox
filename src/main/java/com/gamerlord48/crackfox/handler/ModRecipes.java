@@ -21,7 +21,6 @@ public class ModRecipes {
          * All other chars can be any item assigned.
          */
 
-
         GameRegistry.addRecipe(new ItemStack(ModBlocks.crackFoxBlock), new Object[]
                 {
                         "XXX",
@@ -35,10 +34,11 @@ public class ModRecipes {
          */
 
         /**
-        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.chromiumNugget), new Object[]
-                {
-                        Items.iron_ingot, new ItemStack(Items.dye, 1, 11)
-                });
+         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.chromiumNugget), new Object[]
+         {
+         Items.iron_ingot, new ItemStack(Items.dye, 1, 11)
+         });
          */
+        GameRegistry.addShapelessRecipe(new ItemStack(Items.flint, 1), new ItemStack(Blocks.gravel));
     }
 }
