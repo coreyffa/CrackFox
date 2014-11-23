@@ -74,6 +74,6 @@ public class ModRecipes {
          */
         GameRegistry.addShapelessRecipe(new ItemStack(Items.flint, 1), new ItemStack(Blocks.gravel));
 
-        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.posionFood, 1), new ItemStack(Items.poisonous_potato));
+        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.poisonFood, 1), new ItemStack(Items.poisonous_potato));
     }
 }
