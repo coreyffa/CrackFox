@@ -2,13 +2,13 @@
 {
   "modid": "crackfox",
   "name": "CrackFox Mod",
-  "description": "Custom content for the crackfox server",
-  "version": "${version}",
-  "mcversion": "${mcversion}",
+  "description": "Custom content for the crackfox server and modpack",
+  "version": "1.4.0",
+  "mcversion": "1.7.10",
   "url": "",
   "updateUrl": "",
   "authorList": ["gamerlord48"],
-  "credits": "",
+  "credits": "Forge and the FML guys, for providing the api, and also wuppy29 for his amazing guides",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []
