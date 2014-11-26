@@ -27,7 +27,7 @@ public class ModRecipes {
                         "XXX",
                         "XYX",
                         "XXX",
-                        'X', Blocks.planks, 'Y', Items.arrow
+                        'X', Blocks.planks, 'Y', Blocks.torch
                 });
 
         GameRegistry.addRecipe(new ItemStack(ModItems.chromiumAxe), new Object[]
