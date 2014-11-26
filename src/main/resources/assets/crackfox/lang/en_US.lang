@@ -1,8 +1,7 @@
 tile.crackFoxBlock.name=CrackFox Block
 tile.blockChromiumOre.name=Chromium Ore
 itemGroup.tabCrackFox=CrackFox
-item.testFood.name=Test Food
-item.poisonFood.name=Poisoned Food
+item.chocolate.name=Chocolate
 item.chromiumNugget.name=Chromium Nugget
 item.chromiumPickaxe.name=Chromium Pickaxe
 item.chromiumAxe.name=Chromium Axe

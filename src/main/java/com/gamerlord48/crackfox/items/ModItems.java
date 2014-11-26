@@ -10,8 +10,7 @@ import net.minecraftforge.common.util.EnumHelper;
 public class ModItems {
 
     //Food Items
-    public static Item testFood;
-    public static Item poisonFood;
+    public static Item chocolate;
 
     //non-functional items.
     public static Item chromiumNugget;
@@ -34,9 +33,7 @@ public class ModItems {
 
     public static void loadItems() {
 
-        testFood =new ItemTestFood("testFood", 2, 0.2f, false, new PotionEffect(Potion.damageBoost.id, 1000, 1)).setAlwaysEdible();
-
-        poisonFood = new ItemPoisonFood("poisonFood", 2, 0.2f, false, new PotionEffect(Potion.poison.id, 100, 1)).setAlwaysEdible();
+        chocolate =new ItemTestFood("chocolate", 2, 0.2f, false, new PotionEffect(Potion.damageBoost.id, 500, 1), new PotionEffect(Potion.resistance.id, 500, 1), new PotionEffect(Potion.fireResistance.id, 1000, 1)).setAlwaysEdible();
 
         chromiumNugget = new ItemChromiumNugget();
 
@@ -51,7 +48,6 @@ public class ModItems {
         RegisterHelper.registerItem(chromiumAxe);
         RegisterHelper.registerItem(chromiumSpade);
 
-        RegisterHelper.registerItem(poisonFood);
-        RegisterHelper.registerItem(testFood);
+        RegisterHelper.registerItem(chocolate);
     }
 }
