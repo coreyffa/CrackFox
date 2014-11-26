@@ -24,7 +24,7 @@ public class ModItems {
     // Armor
 
     //materials
-    static Item.ToolMaterial chromiumToolMaterial = EnumHelper.addToolMaterial("chromiumToolMaterial", 2, 750, 7, 2.0F, 20);
+    static Item.ToolMaterial chromiumToolMaterial = EnumHelper.addToolMaterial("chromiumToolMaterial", 1, 500, 10.0F, 3.0F, 20);
 
     /**
      * We call this in our main mod file.
