@@ -14,6 +14,7 @@ public class ModItems {
 
     //non-functional items.
     public static Item chromiumNugget;
+    public static Item chromiumIngot;
 
     //Tools and weapons
     public static Item chromiumPickaxe;
@@ -35,10 +36,13 @@ public class ModItems {
     public static void loadItems() {
 
         chocolate =new ItemTestFood("chocolate", 2, 0.2f, false, new PotionEffect(Potion.damageBoost.id, 500, 1), new PotionEffect(Potion.resistance.id, 500, 1), new PotionEffect(Potion.fireResistance.id, 1000, 1)).setAlwaysEdible();
+        RegisterHelper.registerItem(chocolate);
 
         chromiumNugget = new ItemChromiumNugget();
+        chromiumIngot = new ItemChromiumIngot();
 
         RegisterHelper.registerItem(chromiumNugget);
+        RegisterHelper.registerItem(chromiumIngot);
 
         //Tools and weapons
         chromiumPickaxe = new ItemChromiumPickaxe(chromiumToolMaterial);
@@ -50,7 +54,5 @@ public class ModItems {
         RegisterHelper.registerItem(chromiumAxe);
         RegisterHelper.registerItem(chromiumSpade);
         RegisterHelper.registerItem(chromiumSword);
-
-        RegisterHelper.registerItem(chocolate);
     }
 }

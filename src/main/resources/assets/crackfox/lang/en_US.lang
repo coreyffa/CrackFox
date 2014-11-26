@@ -3,6 +3,7 @@ tile.blockChromiumOre.name=Chromium Ore
 itemGroup.tabCrackFox=CrackFox
 item.chocolate.name=Chocolate
 item.chromiumNugget.name=Chromium Nugget
+item.chromiumIngot.name=Chromium Ingot
 item.chromiumPickaxe.name=Chromium Pickaxe
 item.chromiumAxe.name=Chromium Axe
 item.chromiumSpade.name=Chromium Shovel

@@ -70,6 +70,14 @@ public class ModRecipes {
                         'x', ModItems.chromiumNugget, 'o', Items.stick
                 });
 
+        GameRegistry.addRecipe(new ItemStack(ModItems.chromiumIngot), new Object[]
+                {
+                        "xxx",
+                        "xxx",
+                        "xxx",
+                        'x', ModItems.chromiumNugget
+                });
+
         /**
          * Shapeless recipes are the same as normal recipes, except that they dont have a layout.
          */
