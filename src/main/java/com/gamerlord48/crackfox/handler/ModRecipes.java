@@ -35,7 +35,7 @@ public class ModRecipes {
                         " XX",
                         " YX",
                         " Y ",
-                        'X', ModItems.chromiumNugget, 'Y', Items.stick
+                        'X', ModItems.chromiumIngot, 'Y', Items.stick
                 });
 
         GameRegistry.addRecipe(new ItemStack(ModItems.chromiumAxe), new Object[]
@@ -43,7 +43,7 @@ public class ModRecipes {
                         "XX ",
                         "XY ",
                         " Y ",
-                        'X', ModItems.chromiumNugget, 'Y', Items.stick
+                        'X', ModItems.chromiumIngot, 'Y', Items.stick
                 });
 
         GameRegistry.addRecipe(new ItemStack(ModItems.chromiumPickaxe), new Object[]
@@ -51,7 +51,7 @@ public class ModRecipes {
                         "xxx",
                         " o ",
                         " o ",
-                        'x', ModItems.chromiumNugget, 'o', Items.stick
+                        'x', ModItems.chromiumIngot, 'o', Items.stick
                 });
 
         GameRegistry.addRecipe(new ItemStack(ModItems.chromiumSpade), new Object[]
@@ -59,7 +59,7 @@ public class ModRecipes {
                         " x ",
                         " o ",
                         " o ",
-                        'x', ModItems.chromiumNugget, 'o', Items.stick
+                        'x', ModItems.chromiumIngot, 'o', Items.stick
                 });
 
         GameRegistry.addRecipe(new ItemStack(ModItems.chromiumSword), new Object[]
@@ -67,7 +67,7 @@ public class ModRecipes {
                         " x ",
                         " x ",
                         " o ",
-                        'x', ModItems.chromiumNugget, 'o', Items.stick
+                        'x', ModItems.chromiumIngot, 'o', Items.stick
                 });
 
         GameRegistry.addRecipe(new ItemStack(ModItems.chromiumIngot), new Object[]
