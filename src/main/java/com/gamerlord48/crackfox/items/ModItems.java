@@ -15,16 +15,17 @@ public class ModItems {
     //non-functional items.
     public static Item chromiumNugget;
 
-    //Tools
+    //Tools and weapons
     public static Item chromiumPickaxe;
     public static Item chromiumAxe;
     public static Item chromiumSpade;
+    public static Item chromiumSword;
 
 
     // Armor
 
     //materials
-    static Item.ToolMaterial chromiumToolMaterial = EnumHelper.addToolMaterial("chromiumToolMaterial", 1, 500, 10.0F, 3.0F, 20);
+    static Item.ToolMaterial chromiumToolMaterial = EnumHelper.addToolMaterial("chromiumToolMaterial", 1, 500, 10.0F, 4.0F, 20);
 
     /**
      * We call this in our main mod file.
@@ -39,14 +40,16 @@ public class ModItems {
 
         RegisterHelper.registerItem(chromiumNugget);
 
-        //Tools
+        //Tools and weapons
         chromiumPickaxe = new ItemChromiumPickaxe(chromiumToolMaterial);
         chromiumAxe = new ItemChromiumAxe(chromiumToolMaterial);
         chromiumSpade = new ItemChromiumSpade(chromiumToolMaterial);
+        chromiumSword = new ItemChromiumSword(chromiumToolMaterial);
 
         RegisterHelper.registerItem(chromiumPickaxe);
         RegisterHelper.registerItem(chromiumAxe);
         RegisterHelper.registerItem(chromiumSpade);
+        RegisterHelper.registerItem(chromiumSword);
 
         RegisterHelper.registerItem(chocolate);
     }
