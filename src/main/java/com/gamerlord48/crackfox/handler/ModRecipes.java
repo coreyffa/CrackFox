@@ -22,6 +22,8 @@ public class ModRecipes {
          * All other chars can be any item assigned.
          */
 
+        GameRegistry.addSmelting(Items.rotten_flesh, new ItemStack(Items.leather), 0.1f);
+
         GameRegistry.addRecipe(new ItemStack(ModBlocks.crackFoxBlock), new Object[]
                 {
                         "XXX",
