@@ -21,6 +21,7 @@ public class ModItems {
     public static Item chromiumAxe;
     public static Item chromiumSpade;
     public static Item chromiumSword;
+    public static Item chromiumHoe;
 
 
     // Armor
@@ -49,7 +50,9 @@ public class ModItems {
         chromiumAxe = new ItemChromiumAxe(chromiumToolMaterial);
         chromiumSpade = new ItemChromiumSpade(chromiumToolMaterial);
         chromiumSword = new ItemChromiumSword(chromiumToolMaterial);
+        chromiumHoe = new ItemChromiumHoe(chromiumToolMaterial);
 
+        RegisterHelper.registerItem(chromiumHoe);
         RegisterHelper.registerItem(chromiumPickaxe);
         RegisterHelper.registerItem(chromiumAxe);
         RegisterHelper.registerItem(chromiumSpade);
