@@ -11,6 +11,7 @@ public class ModItems {
 
     //Food Items
     public static Item chocolate;
+    public static Item radBull;
 
     //non-functional items.
     public static Item chromiumNugget;
@@ -38,6 +39,9 @@ public class ModItems {
 
         chocolate =new ItemTestFood("chocolate", 2, 0.2f, false, new PotionEffect(Potion.damageBoost.id, 500, 1), new PotionEffect(Potion.resistance.id, 500, 1), new PotionEffect(Potion.fireResistance.id, 1000, 1)).setAlwaysEdible();
         RegisterHelper.registerItem(chocolate);
+
+        radBull =new ItemRadBull("radBull", new PotionEffect(Potion.jump.id, 500, 1), new PotionEffect(Potion.moveSpeed.id, 500, 1));
+        RegisterHelper.registerItem(radBull);
 
         chromiumNugget = new ItemChromiumNugget();
         chromiumIngot = new ItemChromiumIngot();
