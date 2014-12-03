@@ -28,7 +28,7 @@ public class CrackFoxEventManager implements IWorldGenerator
 
     private void generateSurface(World world, Random random, int x, int z)
     {
-        this.addOreSpawn(ModBlocks.blockChromiumOre, world, random, x, z, 16, 16, 4 + random.nextInt(3), 5, 15, 50);
+        this.addOreSpawn(ModBlocks.blockChromiumOre, world, random, x, z, 16, 16, 12 + random.nextInt(10), 5, 15, 50);
     }
 
     private void generateNether(World world, Random random, int x, int z)
