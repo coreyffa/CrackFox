@@ -12,6 +12,7 @@ public class ModItems {
     //Food Items
     public static Item chocolate;
     public static Item radBull;
+    public static Item tablet;
 
     //non-functional items.
     public static Item chromiumNugget;
@@ -23,7 +24,6 @@ public class ModItems {
     public static Item chromiumSpade;
     public static Item chromiumSword;
     public static Item chromiumHoe;
-
 
     // Armor
 
@@ -42,6 +42,9 @@ public class ModItems {
 
         radBull =new ItemRadBull("radBull", new PotionEffect(Potion.jump.id, 500, 1), new PotionEffect(Potion.moveSpeed.id, 500, 1));
         RegisterHelper.registerItem(radBull);
+
+        tablet = new ItemTablet("tablet", 2, 0.2f, false);
+        RegisterHelper.registerItem(tablet);
 
         chromiumNugget = new ItemChromiumNugget();
         chromiumIngot = new ItemChromiumIngot();
