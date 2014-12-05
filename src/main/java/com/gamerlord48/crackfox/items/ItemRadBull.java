@@ -4,8 +4,9 @@ import com.gamerlord48.crackfox.CrackFox;
 import com.gamerlord48.crackfox.help.Reference;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
-import net.minecraft.item.ItemBucketMilk;
+import net.minecraft.item.ItemFood;
 import net.minecraft.item.ItemStack;
+import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.world.World;
 
@@ -13,29 +14,31 @@ import net.minecraft.world.World;
 /**
  * Created by corey on 12/1/14.
  */
-public class ItemRadBull extends ItemBucketMilk {
-    private PotionEffect[] effects;
+public class ItemRadBull extends ItemFood {
 
-    public ItemRadBull(String unlocalizedName, PotionEffect... effects) {
+    public ItemRadBull(String unlocalizedName, int healAmount, float saturationModifier, boolean wolvesFavorite) {
+        super(healAmount, saturationModifier, wolvesFavorite);
         this.setUnlocalizedName(unlocalizedName);
         setTextureName(Reference.MODID + ":" + getUnlocalizedName().substring(5));
         this.setCreativeTab(CrackFox.tabCrackFox);
-        this.effects = effects;
+        this.setMaxStackSize(1);
     }
 
-    @Override
-    public ItemStack onEaten(ItemStack stack, World world, EntityPlayer player)
+    protected void onFoodEaten(ItemStack stack, World world, EntityPlayer player)
     {
-        if (!player.capabilities.isCreativeMode)
+        if (!world.isRemote)
         {
-            --stack.stackSize;
+            player.addPotionEffect(new PotionEffect(Potion.moveSpeed.id, 2400, 1));
+            player.addPotionEffect(new PotionEffect(Potion.jump.id, 2400, 1));
         }
-
-        for (int i = 0; i < effects.length; i ++) {
-            if (!world.isRemote && effects[i] != null && effects[i].getPotionID() > 0)
-                player.addPotionEffect(effects[i]);
+        else
+        {
+            super.onFoodEaten(stack, world, player);
         }
-
-        return stack.stackSize <= 0 ? new ItemStack(Items.glass_bottle) : stack;
+    }
+    public ItemStack onEaten(ItemStack p_77654_1_, World p_77654_2_, EntityPlayer p_77654_3_)
+    {
+        super.onEaten(p_77654_1_, p_77654_2_, p_77654_3_);
+        return new ItemStack(Items.glass_bottle);
     }
 }

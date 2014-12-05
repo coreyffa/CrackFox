@@ -40,7 +40,7 @@ public class ModItems {
         chocolate =new ItemTestFood("chocolate", 2, 0.2f, false, new PotionEffect(Potion.damageBoost.id, 500, 1), new PotionEffect(Potion.resistance.id, 500, 1), new PotionEffect(Potion.fireResistance.id, 1000, 1)).setAlwaysEdible();
         RegisterHelper.registerItem(chocolate);
 
-        radBull =new ItemRadBull("radBull", new PotionEffect(Potion.jump.id, 500, 1), new PotionEffect(Potion.moveSpeed.id, 500, 1));
+        radBull = new ItemRadBull("radBull", 0, 0.2f, false).setAlwaysEdible();
         RegisterHelper.registerItem(radBull);
 
         tablet = new ItemTablet("tablet", 0, 0.2f, false);
