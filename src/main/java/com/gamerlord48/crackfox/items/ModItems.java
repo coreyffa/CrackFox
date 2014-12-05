@@ -43,7 +43,7 @@ public class ModItems {
         radBull =new ItemRadBull("radBull", new PotionEffect(Potion.jump.id, 500, 1), new PotionEffect(Potion.moveSpeed.id, 500, 1));
         RegisterHelper.registerItem(radBull);
 
-        tablet = new ItemTablet("tablet", 2, 0.2f, false);
+        tablet = new ItemTablet("tablet", 0, 0.2f, false);
         RegisterHelper.registerItem(tablet);
 
         chromiumNugget = new ItemChromiumNugget();

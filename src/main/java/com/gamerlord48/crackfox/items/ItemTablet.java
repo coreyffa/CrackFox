@@ -27,17 +27,7 @@ public class ItemTablet extends ItemFood
     {
         if (!p_77849_2_.isRemote)
         {
-            p_77849_3_.addPotionEffect(new PotionEffect(Potion.field_76444_x.id, 2400, 0));
-        }
-
-        if (p_77849_1_.getItemDamage() > 0)
-        {
-            if (!p_77849_2_.isRemote)
-            {
-                p_77849_3_.addPotionEffect(new PotionEffect(Potion.regeneration.id, 600, 4));
-                p_77849_3_.addPotionEffect(new PotionEffect(Potion.resistance.id, 6000, 0));
-                p_77849_3_.addPotionEffect(new PotionEffect(Potion.fireResistance.id, 6000, 0));
-            }
+            p_77849_3_.addPotionEffect(new PotionEffect(Potion.nightVision.id, 2400, 0));
         }
         else
         {
