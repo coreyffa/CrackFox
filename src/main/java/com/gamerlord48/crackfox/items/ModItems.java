@@ -2,8 +2,6 @@ package com.gamerlord48.crackfox.items;
 
 import com.gamerlord48.crackfox.help.RegisterHelper;
 import net.minecraft.item.Item;
-import net.minecraft.potion.Potion;
-import net.minecraft.potion.PotionEffect;
 import net.minecraftforge.common.util.EnumHelper;
 
 
@@ -37,7 +35,7 @@ public class ModItems {
 
     public static void loadItems() {
 
-        chocolate =new ItemTestFood("chocolate", 2, 0.2f, false, new PotionEffect(Potion.damageBoost.id, 500, 1), new PotionEffect(Potion.resistance.id, 500, 1), new PotionEffect(Potion.fireResistance.id, 1000, 1)).setAlwaysEdible();
+        chocolate =new ItemTestFood("chocolate", 2, 0.2f, false).setAlwaysEdible();
         RegisterHelper.registerItem(chocolate);
 
         radBull = new ItemRadBull("radBull", 0, 0.2f, false).setAlwaysEdible();
