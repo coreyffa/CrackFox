@@ -6,11 +6,12 @@ import com.gamerlord48.crackfox.help.Reference;
 import net.minecraft.item.ItemSword;
 
 
-public class ItemChromiumSword extends ItemSword{
+public class ItemChromiumSword extends ItemSword {
 
     private float dam;
 
-    public ItemChromiumSword(ToolMaterial material) {
+    public ItemChromiumSword(ToolMaterial material)
+    {
         super(material);
         setUnlocalizedName("chromiumSword");
         setTextureName(Reference.MODID + ":" + getUnlocalizedName().substring(5));

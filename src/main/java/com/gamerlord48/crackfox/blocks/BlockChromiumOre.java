@@ -11,7 +11,8 @@ import java.util.Random;
 
 
 public class BlockChromiumOre extends Block {
-    public BlockChromiumOre() {
+    public BlockChromiumOre()
+    {
         super(Material.rock);
         setBlockName("blockChromiumOre");
         setBlockTextureName(Reference.MODID + ":" + getUnlocalizedName().substring(5));
@@ -26,7 +27,8 @@ public class BlockChromiumOre extends Block {
      * Determines what item is dropped when broken
      */
     @Override
-    public Item getItemDropped(int metadata, Random rand, int fortune) {
+    public Item getItemDropped(int metadata, Random rand, int fortune)
+    {
         return ModItems.chromiumNugget;
     }
 }

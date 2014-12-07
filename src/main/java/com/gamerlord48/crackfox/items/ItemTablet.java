@@ -13,8 +13,7 @@ import net.minecraft.world.World;
 /**
  * Created by corey on 12/3/14.
  */
-public class ItemTablet extends ItemFood
-{
+public class ItemTablet extends ItemFood {
     public ItemTablet(String unlocalizedName, int healAmount, float saturationModifier, boolean wolvesFavorite)
     {
         super(healAmount, saturationModifier, wolvesFavorite);

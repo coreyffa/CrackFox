@@ -9,7 +9,8 @@ import net.minecraft.block.material.Material;
 
 public class CrackFoxBlock extends Block {
 
-    public CrackFoxBlock() {
+    public CrackFoxBlock()
+    {
         super(Material.wood);
         setBlockName("crackFoxBlock");
         setBlockTextureName(Reference.MODID + ":" + getUnlocalizedName().substring(5));

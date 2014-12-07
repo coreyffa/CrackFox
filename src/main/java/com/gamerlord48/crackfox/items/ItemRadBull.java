@@ -16,7 +16,8 @@ import net.minecraft.world.World;
  */
 public class ItemRadBull extends ItemFood {
 
-    public ItemRadBull(String unlocalizedName, int healAmount, float saturationModifier, boolean wolvesFavorite) {
+    public ItemRadBull(String unlocalizedName, int healAmount, float saturationModifier, boolean wolvesFavorite)
+    {
         super(healAmount, saturationModifier, wolvesFavorite);
         this.setUnlocalizedName(unlocalizedName);
         setTextureName(Reference.MODID + ":" + getUnlocalizedName().substring(5));
@@ -36,6 +37,7 @@ public class ItemRadBull extends ItemFood {
             super.onFoodEaten(stack, world, player);
         }
     }
+
     public ItemStack onEaten(ItemStack p_77654_1_, World p_77654_2_, EntityPlayer p_77654_3_)
     {
         super.onEaten(p_77654_1_, p_77654_2_, p_77654_3_);

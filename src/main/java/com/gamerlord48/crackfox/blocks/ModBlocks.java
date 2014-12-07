@@ -9,7 +9,8 @@ public class ModBlocks {
     public static Block crackFoxBlock;
     public static Block blockChromiumOre;
 
-    public static void loadBlocks() {
+    public static void loadBlocks()
+    {
         //Declare the item here
         crackFoxBlock = new CrackFoxBlock();
         blockChromiumOre = new BlockChromiumOre();

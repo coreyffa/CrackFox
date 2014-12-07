@@ -7,7 +7,8 @@ import net.minecraft.item.ItemSpade;
 
 
 public class ItemChromiumSpade extends ItemSpade {
-    public ItemChromiumSpade(ToolMaterial material) {
+    public ItemChromiumSpade(ToolMaterial material)
+    {
         super(material);
         setUnlocalizedName("chromiumSpade");
         setTextureName(Reference.MODID + ":" + getUnlocalizedName().substring(5));

@@ -6,7 +6,8 @@ import net.minecraft.item.Item;
 
 
 public class ItemChromiumNugget extends Item {
-    public ItemChromiumNugget() {
+    public ItemChromiumNugget()
+    {
         super();
         setUnlocalizedName("chromiumNugget");
         setTextureName(Reference.MODID + ":" + getUnlocalizedName().substring(5));

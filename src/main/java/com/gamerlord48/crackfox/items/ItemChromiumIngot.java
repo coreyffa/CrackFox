@@ -6,9 +6,10 @@ import com.gamerlord48.crackfox.help.Reference;
 import net.minecraft.item.Item;
 
 
-public class ItemChromiumIngot extends Item{
+public class ItemChromiumIngot extends Item {
 
-    public ItemChromiumIngot() {
+    public ItemChromiumIngot()
+    {
         super();
         setUnlocalizedName("chromiumIngot");
         setTextureName(Reference.MODID + ":" + getUnlocalizedName().substring(5));

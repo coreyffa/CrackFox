@@ -13,7 +13,8 @@ import net.minecraft.world.World;
 
 public class ItemTestFood extends ItemFood {
 
-    public ItemTestFood(String unlocalizedName, int healAmount, float saturationModifier, boolean wolvesFavorite) {
+    public ItemTestFood(String unlocalizedName, int healAmount, float saturationModifier, boolean wolvesFavorite)
+    {
         super(healAmount, saturationModifier, wolvesFavorite);
         this.setUnlocalizedName(unlocalizedName);
         setTextureName(Reference.MODID + ":" + getUnlocalizedName().substring(5));

@@ -33,9 +33,10 @@ public class ModItems {
      * We add all items here to the game.
      */
 
-    public static void loadItems() {
+    public static void loadItems()
+    {
 
-        chocolate =new ItemTestFood("chocolate", 2, 0.2f, false).setAlwaysEdible();
+        chocolate = new ItemTestFood("chocolate", 2, 0.2f, false).setAlwaysEdible();
         RegisterHelper.registerItem(chocolate);
 
         radBull = new ItemRadBull("radBull", 0, 0.2f, false).setAlwaysEdible();

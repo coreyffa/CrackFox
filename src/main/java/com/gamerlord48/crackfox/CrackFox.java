@@ -26,7 +26,8 @@ public class CrackFox {
 
     public static final CreativeTabs tabCrackFox = new CreativeTabs(12, "tabCrackFox") {
         @SideOnly(Side.CLIENT)
-        public Item getTabIconItem() {
+        public Item getTabIconItem()
+        {
             return Item.getItemFromBlock(ModBlocks.crackFoxBlock);
         }
     };
@@ -41,7 +42,8 @@ public class CrackFox {
      * @param event
      */
     @EventHandler
-    public void preInit(FMLPreInitializationEvent event) {
+    public void preInit(FMLPreInitializationEvent event)
+    {
         //Block handlers, handles all blocks
         ModBlocks.loadBlocks();
 
@@ -55,6 +57,7 @@ public class CrackFox {
     }
 
     @EventHandler
-    public void init(FMLInitializationEvent event) {
+    public void init(FMLInitializationEvent event)
+    {
     }
 }
