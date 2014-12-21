@@ -35,10 +35,6 @@ public class ModItems {
 
     public static void loadItems()
     {
-
-        chocolate = new ItemTestFood("chocolate", 2, 0.2f, false).setAlwaysEdible();
-        RegisterHelper.registerItem(chocolate);
-
         radBull = new ItemRadBull("radBull", 0, 0.2f, false).setAlwaysEdible();
         RegisterHelper.registerItem(radBull);
 

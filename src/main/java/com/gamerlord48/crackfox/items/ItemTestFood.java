@@ -6,8 +6,6 @@ import com.gamerlord48.crackfox.help.Reference;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemFood;
 import net.minecraft.item.ItemStack;
-import net.minecraft.potion.Potion;
-import net.minecraft.potion.PotionEffect;
 import net.minecraft.world.World;
 
 
@@ -25,7 +23,7 @@ public class ItemTestFood extends ItemFood {
     {
         if (!p_77849_2_.isRemote)
         {
-            p_77849_3_.addPotionEffect(new PotionEffect(Potion.moveSpeed.id, 1000, 0));
+            //p_77849_3_.addPotionEffect(new PotionEffect(Potion.moveSpeed.id, 1000, 0));
         }
         else
         {

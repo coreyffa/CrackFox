@@ -31,4 +31,10 @@ public class BlockChromiumOre extends Block {
     {
         return ModItems.chromiumNugget;
     }
+
+    @Override
+    public int quantityDropped(Random rand)
+    {
+        return 3;
+    }
 }
