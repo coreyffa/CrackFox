@@ -42,9 +42,9 @@ public class ModRecipes {
         GameRegistry.addRecipe(new ItemStack(ModItems.chromiumHoe), new Object[] { " xx", " o ", " o ", 'x', ModItems.chromiumIngot, 'o', Items.stick });
 
         GameRegistry.addRecipe(new ItemStack(ModItems.chromiumHoe), new Object[] { "xx ", " o ", " o ", 'x', ModItems.chromiumIngot, 'o', Items.stick });
-        GameRegistry.addRecipe(new ItemStack(ModItems.tablet), new Object[] { " x ", "xyx", " x ", 'x', Items.sugar, 'y', Items.glowstone_dust
+        GameRegistry.addRecipe(new ItemStack(ModItems.tablet), new Object[] { " x ", "xyx", " x ", 'x', Items.sugar, 'y', Items.glowstone_dust});
 
-        });
+        GameRegistry.addRecipe(new ItemStack(ModItems.radBull), new Object[] { "xxx", "xyx", " o ", 'x', Items.sugar, 'y', Items.redstone, 'o', Items.glass_bottle});
 
         /**
          * Shapeless recipes are the same as normal recipes, except that they dont have a layout.
