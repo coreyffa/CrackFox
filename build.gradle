@@ -22,7 +22,7 @@ group= "com.gamerlord48.crackfox" // http://maven.apache.org/guides/mini/guide-n
 archivesBaseName = "CrackFoxMod"
 
 minecraft {
-    version = "1.7.10-10.13.2.1230"
+    version = "1.7.10-10.13.2.1272"
     runDir = "eclipse"
 }
 
