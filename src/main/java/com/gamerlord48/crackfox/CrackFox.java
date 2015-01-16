@@ -2,6 +2,7 @@ package com.gamerlord48.crackfox;
 
 import com.gamerlord48.crackfox.blocks.ModBlocks;
 import com.gamerlord48.crackfox.event.CrackFoxEventManager;
+import com.gamerlord48.crackfox.handler.CrackFoxFuelHandler;
 import com.gamerlord48.crackfox.handler.ModRecipes;
 import com.gamerlord48.crackfox.help.Reference;
 import com.gamerlord48.crackfox.items.ModItems;
@@ -33,6 +34,7 @@ public class CrackFox {
     };
 
     CrackFoxEventManager crackFoxEventManager = new CrackFoxEventManager();
+    CrackFoxFuelHandler crackFoxFuelHandler = new CrackFoxFuelHandler();
 
     /**
      * This is where you can add your own stuff.
@@ -53,7 +55,8 @@ public class CrackFox {
         //Register handler, adds all the recipes
         ModRecipes.addRecipes();
 
-        GameRegistry.registerWorldGenerator(crackFoxEventManager, 1);
+        GameRegistry.registerWorldGenerator(crackFoxEventManager, 4);
+        GameRegistry.registerFuelHandler(crackFoxFuelHandler);
     }
 
     @EventHandler
